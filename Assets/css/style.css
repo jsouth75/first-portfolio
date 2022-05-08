@@ -1,0 +1,10 @@
+img {
+    justify-content:left;
+    box-sizing: content-box;
+}
+
+img {
+   width: 10em;
+   height: 10em;
+   background-size: contain;
+}
