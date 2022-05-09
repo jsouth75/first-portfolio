@@ -18,6 +18,7 @@ header {
 }
 
 .header {
+    position: sticky;
     font-size: 48px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
@@ -36,7 +37,7 @@ span {
 }
 
 .nav {
-    text-align: right;  
+   text-align: right;
     padding: .5em;
     border: 1em;
 }
@@ -50,47 +51,37 @@ a {
     padding: .75em;
 }
 
-.about {
+.component {
     display: flex;
     flex-wrap: wrap;
     margin: 1em;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
-#bookmark1, #bookmark2, #bookmark3, #bookmark4 {
-    display: block;
-    font-size: 1.5em;
-    position: relative;
-    bottom: 60px; left: 30px;
-}
-
-aside {
+.component aside {
+    flex: 0 0 20%;
     padding: 3em;
     border-right: 4px solid;
 }
 
-img {
-    width: 10em;
-    float:inline-start;
-    padding-left: .5em;
+.component div {
+    flex: 1 0 75%;
 }
 
-.aboutme::after: {
-    content: "img";
-    clear: both;
-    display: table;
+#profile {
+    float: left;
+    margin: 5px;
 }
 
-.aboutme {
-    flex: wrap;
-    direction: ltr;
-    width: 50%;
-    padding: 5px;
-}
-
-.work {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1em;
+#bookmark1, #bookmark2, #bookmark3, #bookmark4 {
+    display: block;
+    text-align: right;
+    justify-content: end;
+    font-size: 1.5em;
+    position: relative;
+    padding-top: ;
+    bottom: 60px;
 }
 
 img {
@@ -99,27 +90,12 @@ img {
     padding-left: .5em;
 }
 
-.contact {
+.data {
     display: flex;
-    flex-wrap: wrap;
-    margin: 1em;
-}
+    justify-content: space-between;
+    margin: .5em, 1em;
+}    
 
-th {
-    border-top: 10px;
-    display: inline;
-    direction: ltr;
-    width: 50%;
-    padding: 6em;
-}
-
-td {
-    border-top: 10px;
-    display: inline;
-    direction: ltr;
-    width: 50%;
-    padding: 3em;
-}
 #resume {
     width: 10em;
     float:inline-start;
@@ -128,14 +104,8 @@ td {
     color: blue;
 }
 
-.resume {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1em;
-}
-
-@media screen and (max-width: 414px) {
-    nav ol li {
+@media screen and (max-width: 600px) {
+    nav a {
        display: block;
        direction: rtl;
        padding: 0.5em;
@@ -147,11 +117,27 @@ td {
     aside {
         justify-content:block;
         border-right: none;
+        border-bottom: 3px black solid;
         margin: .5em;
         padding: 2em;
     }
-    .about {
+
+    .component {
+        flex-direction: column;
+        justify-content: center;
         box-sizing: border-box;
+        text-align: center;
+    }
+
+    .component aside h2 {
+        text-align: center;
+    }
+
+    .component div p {
+        text-align: center;
+    }
+
+    .component div img {
         text-align: center;
     }
 } 
