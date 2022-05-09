@@ -41,17 +41,22 @@ span {
     border: 1em;
 }
 
+nav a:hover {
+    background-color: gray;
+    color: white;
+}
+
 a {
     padding: .75em;
 }
 
-#about {
+.about {
     display: flex;
     flex-wrap: wrap;
     margin: 1em;
 }
 
-#bookmark1, #bookmark2 {
+#bookmark1, #bookmark2, #bookmark3, #bookmark4 {
     display: block;
     font-size: 1.5em;
     position: relative;
@@ -69,19 +74,18 @@ img {
     padding-left: .5em;
 }
 
-.about::after {
+.aboutme::after: {
     content: "img";
     clear: both;
     display: table;
 }
 
-.about {
+.aboutme {
     flex: wrap;
     direction: ltr;
     width: 50%;
     padding: 5px;
 }
-
 
 .work {
     display: flex;
@@ -101,7 +105,34 @@ img {
     margin: 1em;
 }
 
+th {
+    border-top: 10px;
+    display: inline;
+    direction: ltr;
+    width: 50%;
+    padding: 6em;
+}
 
+td {
+    border-top: 10px;
+    display: inline;
+    direction: ltr;
+    width: 50%;
+    padding: 3em;
+}
+#resume {
+    width: 10em;
+    float:inline-start;
+    padding-left: .5em;
+    font-size: 24px;
+    color: blue;
+}
+
+.resume {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+}
 
 @media screen and (max-width: 414px) {
     nav ol li {
