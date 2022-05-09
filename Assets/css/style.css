@@ -4,11 +4,11 @@
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: floralwhite;
+    background-color: rgb(158, 195, 237);
 }
 
 header {
-    background-color: rgb(98, 197, 197);
+    background-image: url("./images/joe-woods-4Zaq5xY5M_c-unsplash.jpg");
     width: 100%;
     margin: 0;
     overflow: hidden;
@@ -43,7 +43,7 @@ span {
 }
 
 nav a:hover {
-    background-color: gray;
+    background-color: rgb(197, 196, 196);
     color: white;
 }
 
@@ -97,8 +97,6 @@ img {
 }    
 
 #resume {
-    width: 10em;
-    float:inline-start;
     padding-left: .5em;
     font-size: 24px;
     color: blue;
