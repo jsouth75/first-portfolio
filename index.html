@@ -9,34 +9,80 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- header -->
     <header>
-            <h1>Jason South</h1>
-    </header>
-    <!-- Navigation bar -->
-    <nav>
-        <a href="About Me">About Me</a>
-        <a href="Work">Work</a>
-        <a href="Contact">Contact</a>
-        <a href="Resume">Resume</a>
-    </nav>
-    <!-- Body -->
-    <main>
-        <!-- Sidebar -->
-        <section>
+        <h1 class="header">Jason South</h1>
+        <p>"Twenty years from now you will be more disappointed by the things that you didn't do than by the one you did do." <span>Mark Twain</span> </p>
+
+        <!-- Navigation bar -->
+        <nav class="nav">    
+            <a href="#bookmark1">About Me</a>
+            <a href="#bookmark2">Work</a> 
+            <a href="#bookmark3">Contact Me</a>
+            <a href="#bookmark4">Resume</a>
+        </nav>
+     </header>
+
+     <hr>
+
+        <div id="about">
+            <!-- Side bar -->
             <aside>
-                <h2>About Me</h2>
-                <!-- Picture -->
-                <img src="./Assets/css/images/On Top of Angel's Landing.jpg" alt="Jason South" />
-                <!-- content about me -->
-                <p class="about me">I have a Bachelor of Science in Management & Marketing from Arkansas Tech University and soon after college got into sales. This lead me from the industrial market for almost 2 years into the construction market for the last 22 years. During this time, I have acquired my contractor licenses and been in both sales and management roles. Nonetheless, I have the desire to pursue a career in computer programming. I am excited and look forward to what is ahead.</p>
+                <h2 id="bookmark1">About Me</h2>
+            </aside>    
+            <!-- Picture -->
+            <img src="./Assets/css/images/On Top of Angel's Landing.jpg" alt="Jason South"/>
+            <!-- content about me -->
+            <p class="about">I have a Bachelor of Science in Management & Marketing from Arkansas Tech University and soon after college got into sales. This led me from the industrial market for almost 2 years into the construction market for the last 22 years. During this time, I have acquired my contractor licenses and been in both sales and management roles. Nonetheless, I have the desire to pursue a career in computer programming. I am excited and look forward to what is ahead.</p>
+        </div>
+
+        <div class="work">
+            <!-- Side bar -->
+            <aside>
+                <h2 id="bookmark2">Work</h2>
+             </aside>    
+            <!-- Picture -->
+            <img src="https://via.placeholder.com/200" alt="temporary picture"/>
+            <img src="https://via.placeholder.com/200" alt="temporary picture"/>
+        </div>
+
+        <div class="contact">
+            <!-- Side bar -->
+            <aside>
+                <h2 id="bookmark3">Contact Me</h2>
             </aside>
-        </section>
-        
-                
+            <table>
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>GitHub</th>
+                        <th>LinkedIn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>jason.south@me.com</td>
+                        <td>(901) 461-3137</td>
+                        <td>https://github.com/jsouth75</td>
+                        <td>linkedin.com/in/jason-south-86939a47</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-      </main>
+        <div class="resume">
+            <aside>
+            <!-- Side bar -->
+                <h2 id="bookmark4">Resume</h2>
+            </aside>    
+                <!-- Resume -->
+                <a href="https://drive.google.com/file/d/1uem8lbm0pUFL7eernKjXWRa-9WKedJJ1/view?usp=sharing">Resume</a>
+        </div>
+            
+        </div>
 
+    </main>  
     
     
     
