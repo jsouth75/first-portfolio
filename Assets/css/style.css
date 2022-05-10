@@ -92,6 +92,12 @@ img {
     padding-left: .5em;
 }
 
+.projects img {
+    width: 300px;
+    height: 300px;
+
+}
+
 .contact {
     display: flex;
     justify-content: space-between;
