@@ -49,7 +49,7 @@ nav a:hover {
     color: white;
 }
 
-a {
+a, label {
     padding: .75em;
 }
 
@@ -92,7 +92,7 @@ img {
     padding-left: .5em;
 }
 
-.data {
+.contact {
     display: flex;
     justify-content: space-between;
     margin: .5em, .5em;
