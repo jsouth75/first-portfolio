@@ -16,7 +16,7 @@ header {
     border: 5px;
     padding: 5px;
     padding-left: 20px;
-    color: black
+    color: black;
 }
 
 .header {
@@ -98,9 +98,22 @@ img {
     margin: .5em, .5em;
 }    
 
+.contact a {
+    color: oldlace;
+}
+
 #resume {
-    padding-left: .5em;
+    padding-left: 2em;
     font-size: 24px;
+    color: oldlace;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 2em;
+    width: 100%;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {
