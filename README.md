@@ -9,4 +9,4 @@ I have not had much experience at this time, so I will be adding to this site at
 URL: https://jsouth75.github.io/first-portfolio/
 GitHub link: https://github.com/jsouth75/first-portfolio
 
-![Screenshot of first-portfolio](./Assets/css/images/Portfolio.png)
+![Screenshot of first-portfolio](./Assets/css/images/Portfolio_updated.png)
